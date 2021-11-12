@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&family=Trirong&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #1E1C21;
+    height: 130px;
+}
+
+.container-grid {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.container-gridb {
+    background-color: black;
+    text-align: center;
+}
+
+.posicionamento-header {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    width: 660px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Trirong', serif;
+    font-size: 20px;
+}
+
+.barras {
+    width: 30px;
+    display: none;
+}
+
+.banner {
+    background-image: url(../img/matrix.jpg);
+    height: 605px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.imagem_banner {
+    width: 500px;
+}
+
+.itens-banner {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.itens-banner img {
+    width: 800px;
+}
+
+.texto-banner {
+    width: 495px;
+    color: white;
+    text-align: center;
+    font-family: 'Trirong', serif;
+    font-size: 25px;
+    border-radius: 30px;
+}
+
+.texto-banner h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 75px;
+    font-weight: bold;
+}
+
+.texto-banner p {
+    margin-bottom: 40px;
+}
+
+.texto-banner a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px;
+    background-color: #C31616;
+    border-radius: 5px;
+    font-family: 'Trirong', serif;
+    font-size: 30px;
+}
+
+.secao-jogos {
+    background-color: black;
+    height: 180px;
+}
+
+.jogos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.jogos img {
+    height: 150px;
+}
+
+.secao-sobre {
+    background-image: url(../img/estrelas.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.texto-sobre {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-imagem {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .container-grid {
+        width: 90%;
+    }
+
+    .menu {
+        width: 460px;
+    }
+
+    .menu a {
+        font-size: 16px;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    .container-grid {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .itens-banner img {
+        width: 500px;
+    }
+
+    .divisor1 {
+        background-color: black;
+        height: 100px;
+        justify-content: center;
+    }
+
+    .itens-banner {
+        height: 80%;
+    }
+
+    .texto-banner h1 {
+        font-size: 50px;
+        
+    }
+    
+    .texto-banner p {
+        font-size: 20px;
+    }
+    
+    .texto-banner a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .barras {
+        display: inline-block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 300px;
+        background-color: black;
+        position: absolute;
+        top: 20px;
+        right: 40px;
+    }
+
+    .menu a {
+        text-align: center;
+        font-size: 40px;
+        padding: 15px;
+    }
+
+    .posicionamento-header {
+        position: relative;
+    }
+}
